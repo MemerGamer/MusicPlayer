@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MusicPlayerApp.exe" version="1.0.0.0" publicKeyToken="9f207299b2c98c55" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MusicPlayerApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MusicPlayerApp.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vldeb0VqHF0IPDjBk1+aPCGU8SUGHkvElvPcJwv5zAk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>D7TLGZYOattjFyiQrI4ra6ne7wrnOLgSuxfUdABEsPs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MusicPlayerApp.exe" size="12288">
+      <assemblyIdentity name="MusicPlayerApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oq2/Gk6O05v6D7SbkJoH9V/owuw1MTGqGSOfJNLVjaQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="MusicPlayerApp.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-73DFMV2\Hunor-PC" issuerKeyHash="6e00c44015c970de6c39da5886cf4e3b04984adf" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>yfza3Z628VT4EFfyFbgD00SsqsW0rvTJIqpscoxp2qg=</DigestValue></Reference></SignedInfo><SignatureValue>dMsJ35CGG8bPIwy5y6JSq7+cykJVSbvVr3MXORTKQCkZG9AiAuSM8Xr+eSjmSXH9IlhkJwBYl/+CyZOX6ezmY+cUBed9+Q6t150VjImRlE0bUYZJLEOVRAm1CosqW5u24ArhB6u07avpPjF9RvP2YHduE7SC+E0FxKiYxzosSrc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yM3R8ZE5ZX76JTV7/Cnb1DzXQquNqypMjFX5EswAzfjHJiypH6dvk+ykXr9KpALidN1p9UNhXtfN3kme5hioKWfYGpCJtQzxFgJi7sD1qKv4NKYzb4SnD7EDMYofiJE0NwoB6+T4qRI64AbLL069JKoA9iyu5h//RTn0mGUI2bU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a8da698c726caa22c9f4aeb4c5aaac44d303b815f25710f854f1b69edddafcc9" Description="" Url=""><as:assemblyIdentity name="MusicPlayerApp.exe" version="1.0.0.0" publicKeyToken="9f207299b2c98c55" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-73DFMV2\Hunor-PC</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>KYEcxglRDNNvyfB6XcaE5uIG8idqqvybd/MWcA6/+84=</DigestValue></Reference></SignedInfo><SignatureValue>eY8Yq6rQN2Z+R8v6FDiTTN1gsrdXbCSZsR0ntCqkZH8sscBwl3eFw8He1tm2sLCbGcQBBOZcfYzT0jFyjlo0T1rzvv72rYj/lsvNc0tq/YgA5Z2Ty6iPrnVXjOxOYQhTOzug/Ve5/awaNGu4gLKCdR8n6niAlT5ePRJzaSjLU1k=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yM3R8ZE5ZX76JTV7/Cnb1DzXQquNqypMjFX5EswAzfjHJiypH6dvk+ykXr9KpALidN1p9UNhXtfN3kme5hioKWfYGpCJtQzxFgJi7sD1qKv4NKYzb4SnD7EDMYofiJE0NwoB6+T4qRI64AbLL069JKoA9iyu5h//RTn0mGUI2bU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQPBU4vvkjG6pGp5n8h6FCMTANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtADcAMwBEAEYATQBWADIAXABIAHUAbgBvAHIALQBQAEMwHhcNMjAxMTA3MjEyMTQ2WhcNMjExMTA4MDMyMTQ2WjA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtADcAMwBEAEYATQBWADIAXABIAHUAbgBvAHIALQBQAEMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMjN0fGROWV++iU1e/wp29Q810KrjasqTIxV+RLMAM34xyYsqR+nb5PspF6/SqQC4nTdafVDYV7Xzd5JnuYYqCln2BqQibUM8RYCYu7A9air+DSmM2+Epw+xAzGKH4iRNDcKAevk+KkSOuAGyy9OvSSqAPYsruYf/0U59JhlCNm1AgMBAAEwDQYJKoZIhvcNAQELBQADgYEAlCcU8k7Og95T3G4vBmfRAJcgOUmKHZvbJgteQvnU28eHxy0GT1QMuQ5ELGHiUSPKiGTk9Y0maCDYRtVFrDc0D1+ntZh5B+NFv/Gei7v7sGahgdQrvzjFvvGVPXoNX3agawB6BHivFMLttiJTBocjLeQaL7rb50g7hBcF0Ro+CMU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
